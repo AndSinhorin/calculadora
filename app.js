@@ -4,9 +4,9 @@ console.log('Bem vindo a calculadora!')
  
 let resultado = []
 
-let x = parseFloat( prompt('Qual o primeiro número?'))
-let op = prompt('Qual a operação?')
-let y = parseFloat(prompt('Qual o segundo número?'))
+let x = parseFloat( prompt('Digite o primeiro número? '))
+let op = prompt('Operação desejada? ')
+let y = parseFloat(prompt('Digite o segundo número? '))
 
 calculadora(x, op, y)
 
@@ -26,7 +26,7 @@ function calculadora(x, op, y) {
                 console.log('Opção inválida, tente novamente!')
                 calculadora()
             } else{
-                resulatdo = x / y
+                resultado = x / y
             }
             break
         case '%':
@@ -38,5 +38,5 @@ function calculadora(x, op, y) {
             break
     }
 
-    console.log(`A resposta é: ${resultado}`)
+    console.log(`Resultado: ${x} ${op} ${y} = ${resultado}`)
 }
